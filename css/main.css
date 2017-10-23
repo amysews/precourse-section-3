@@ -2,3 +2,24 @@
     background: pink;
     border: 1px solid purple;
 }
+
+.homepage_headers {
+    font-size: 24px;
+    text-align: center;
+}
+
+.jumbotron {
+    background: url("johnson-wang-20675.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.thumbnail {
+    border: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
