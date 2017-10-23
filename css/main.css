@@ -1,10 +1,25 @@
-.pink {
-    background: pink;
-    border: 1px solid purple;
+body {
+    padding-top: 50px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-inverse {
+    background: rgb(87, 87, 87);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
 }
 
 .homepage_headers {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -13,13 +28,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+    color: rgb(87, 87, 87);
 }
 
 .thumbnail {
     border: 0;
+    text-align: center;
 }
 
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+.glyphicon {
+    font-size: 80px;
+    text-align: center;
+    padding: 50px;
+    color: rgb(87, 87, 87);
 }
