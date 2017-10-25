@@ -18,7 +18,7 @@ a:hover {
 }
 .navbar {
     margin-bottom: 0;
-    border-radius: 0;
+    border: 0;
 }
 .navbar-inverse {
     background: rgb(87, 87, 87);
@@ -38,11 +38,19 @@ a:hover {
 }
 
 .jumbotron {
-    background: url("johnson-wang-20675.jpg");
+    background: url("johnson-wang-20675 cropped.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-    color: rgb(87, 87, 87);
+    height: 300px;
+    color: rgb(255, 255, 255);
+}
+
+.jumbotron h1 {
+    background-color: rgba(87, 87, 87, 0.6);
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 44px;
 }
 
 .thumbnail {
@@ -79,18 +87,14 @@ a:hover {
 }
 
 #timetableInfo {
-    width: 80%;
+    max-width: 80%;
     text-align: center;
     margin-top: 20px;
 }
-
-.show {
-    display: '';
-}
-
-.filterDiv {
+ 
+.filterToggle {
     display: none;
-}
+} 
 
 th {
     text-align: center;
@@ -99,6 +103,11 @@ th {
 #mapInfo {
     text-align: center;
     margin-top: 20px;
+}
+
+iframe {
+    max-width: 500px;
+    max-height: 400px;
 }
 
 .form-horizontal {

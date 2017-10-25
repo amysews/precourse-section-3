@@ -49,33 +49,39 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 classes">
-                <h2>Yoga</h2>
-                <h3>What will you be doing</h3>
-                <p>
-                    Hatha yoga classed, based on the mat but using aids like a chair, blocks and straps where required.
-                    Each week, the class is different however we always start and end with a short relaxation session.
-                    All equipment is provided, but if you would prefer to use your own mat, that is fine. 
-                    May want to bring a blanket for the relaxation in the colder months.
-                </p>
-                <h3>Who's it for</h3>
-                <p>
-                    Mixed ability class, everyone welcome as long as you feel comfortable getting up and down off the floor.
-                    Everyone is encouraged to work within their own limits and not do anything their not comfortable with.
-                </p>
-                <h3>Venue</h3>
-                <p>
-                    Gladstone Village Hall, Burton
-                </p>
-                <h3>Duration</h3>
-                <p>
-                    90 minutes
-                </p>    
-                <h3>Price</h3>
-                <p>
-                    £7 per class or £36 for block of 6 classes
-                </p>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                            <h2>Yoga</h2>
+                            <h3>What will you be doing</h3>
+                            <p>
+                                Hatha yoga classed, based on the mat but using aids like a chair, blocks and straps where required.
+                                Each week, the class is different however we always start and end with a short relaxation session.
+                                All equipment is provided, but if you would prefer to use your own mat, that is fine. 
+                                May want to bring a blanket for the relaxation in the colder months.
+                            </p>
+                            <h3>Who's it for</h3>
+                            <p>
+                                Mixed ability class, everyone welcome as long as you feel comfortable getting up and down off the floor.
+                                Everyone is encouraged to work within their own limits and not do anything their not comfortable with.
+                            </p>
+                            <h3>Venue</h3>
+                            <p>
+                                Gladstone Village Hall, Burton
+                            </p>
+                            <h3>Duration</h3>
+                            <p>
+                                90 minutes
+                            </p>    
+                            <h3>Price</h3>
+                            <p>
+                                £7 per class or £36 for block of 6 classes
+                            </p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 classes">
+                <div class="panel panel-default">
+                    <div class="panel-body">
                 <h2>Chair Yoga</h2>
                 <h3>What will you be doing</h3>
                 <p>
@@ -100,6 +106,8 @@
                 <p>
                     £5 per class
                 </p>
+                </div>
+                </div>
             </div>
         </div>
     </div>
@@ -107,11 +115,13 @@
 
     <!-- Interactive Table -->
     <div class="container" id="timetableInfo">
+        <div class="row">
+            <div class="col-md-12">
         <h2>Class Timetable</h2>
         <span class="jqButtons">
-            <button type="button radio" name="filter" onclick="filterSelection('all')" checked>Show All</button>
-            <button type="button radio" name="filter" onclick="filterSelection('yoga')">Only Yoga</button>
-            <button type="button radio" name="filter" onclick="filterSelection('chair')">Only Chair Yoga</button>
+            <button type="button radio" name="filter" id="all" checked>Show All</button>
+            <button type="button radio" name="filter" id="yoga">Only Yoga</button>
+            <button type="button radio" name="filter" id="chair">Only Chair Yoga</button>
         </span>
         
             <table class="table">
@@ -145,17 +155,19 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
     </div>
 
     <!-- Venue Info -->
     <div class="container" id="mapInfo">
         <h2>Venue Information</h2>
         <p>
-            The classes take place in two different venues in Burton Village although the share the same car park. 
+            The classes take place in two different venues in Burton Village although they share the same free car park. 
             Gladstone Village Hall is shown on the map below and can be seen from the road. 
             Sports and Social Club is the building behind the Village Hall, next to the bowling green.
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.5578991485127!2d-3.0248867445598333!3d53.26162284560361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd66a1d741140e0d4!2sGladstone+Village+Hall!5e0!3m2!1sen!2suk!4v1508935749449" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.5578991485127!2d-3.0248867445598333!3d53.26162284560361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd66a1d741140e0d4!2sGladstone+Village+Hall!5e0!3m2!1sen!2suk!4v1508935749449" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <!-- Footer -->
