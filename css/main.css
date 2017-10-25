@@ -84,6 +84,14 @@ a:hover {
     margin-top: 20px;
 }
 
+.show {
+    display: '';
+}
+
+.filterDiv {
+    display: none;
+}
+
 th {
     text-align: center;
 }

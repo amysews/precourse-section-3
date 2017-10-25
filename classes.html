@@ -105,13 +105,13 @@
     </div>
 
 
-    
+    <!-- Interactive Table -->
     <div class="container" id="timetableInfo">
         <h2>Class Timetable</h2>
         <span class="jqButtons">
-            <button type="button" id="showAll">Show All</button>
-            <button type="button" id="onlyYoga">Only Yoga</button>
-            <button type="button" id="onlyChair">Only Chair Yoga</button>
+            <button type="button radio" name="filter" onclick="filterSelection('all')" checked>Show All</button>
+            <button type="button radio" name="filter" onclick="filterSelection('yoga')">Only Yoga</button>
+            <button type="button radio" name="filter" onclick="filterSelection('chair')">Only Chair Yoga</button>
         </span>
         
             <table class="table">
@@ -124,20 +124,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="chairYoga">
+                    <tr class="filterDiv chairYoga">
                         <td>Chair Yoga</td>
                         <td>Monday</td>
                         <td>9:30 AM</td>
                         <td>Social Club</td>
                     </tr>
-                    <tr class="yoga">
+                    <tr class="filterDiv yoga">
                         <td>Yoga</td>
                         <td>Tuesday</td>
                         <td>7:00 PM</td>
                         <td>Village Hall</td>
                         
                     </tr>
-                    <tr class="chairYoga">
+                    <tr class="filterDiv chairYoga">
                         <td>Chair Yoga</td>
                         <td>Thursday</td>
                         <td>9:30 AM</td>
@@ -147,6 +147,7 @@
             </table>
     </div>
 
+    <!-- Venue Info -->
     <div class="container" id="mapInfo">
         <h2>Venue Information</h2>
         <p>
