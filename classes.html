@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Bootstrap hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Logo or brand name -->
+                <a href="index.html" class="navbar-brand">HOME</a>
+            </div>
+
+            <!-- Links on right handside -->
+            <div class="collapse navbar-collapse" id="bs-collapse-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Jumpotron on home page -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Information about Classes</h1>    
+        </div>
+    </div>
+
+    <!-- Info about the 2 different classes -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 classes">
+                <h2>Yoga</h2>
+                <h3>What will you be doing</h3>
+                <p>
+                    Hatha yoga classed, based on the mat but using aids like a chair, blocks and straps where required.
+                    Each week, the class is different however we always start and end with a short relaxation session.
+                    All equipment is provided, but if you would prefer to use your own mat, that is fine. 
+                    May want to bring a blanket for the relaxation in the colder months.
+                </p>
+                <h3>Who's it for</h3>
+                <p>
+                    Mixed ability class, everyone welcome as long as you feel comfortable getting up and down off the floor.
+                    Everyone is encouraged to work within their own limits and not do anything their not comfortable with.
+                </p>
+                <h3>Venue</h3>
+                <p>
+                    Gladstone Village Hall, Burton
+                </p>
+                <h3>Duration</h3>
+                <p>
+                    90 minutes
+                </p>    
+                <h3>Price</h3>
+                <p>
+                    £7 per class or £36 for block of 6 classes
+                </p>
+            </div>
+            <div class="col-md-6 classes">
+                <h2>Chair Yoga</h2>
+                <h3>What will you be doing</h3>
+                <p>
+                    75% of the class is chair based, taking movements to head, arms and legs. Each week, working on same 
+                    movements to increase strength and mobility. Always end of the session with a short relaxation. 
+                    All equipment is provided.
+                </p>
+                <h3>Who's it for</h3>
+                <p>
+                    Those with reduced mobility or health issues that might have difficulties with the mat based class. 
+                    Everyone is encouraged to work within their own limits and not do anything their not comfortable with.
+                </p>
+                <h3>Venue</h3>
+                <p>
+                    Sports and Social Club, Burton
+                </p>
+                <h3>Duration</h3>
+                <p>
+                    60 minutes
+                </p>
+                <h3>Price</h3>
+                <p>
+                    £5 per class
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="container" id="timetableInfo">
+        <h2>Class Timetable</h2>
+        <span class="jqButtons">
+            <button type="button" id="showAll">Show All</button>
+            <button type="button" id="onlyYoga">Only Yoga</button>
+            <button type="button" id="onlyChair">Only Chair Yoga</button>
+        </span>
+        
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="chairYoga">
+                        <td>Chair Yoga</td>
+                        <td>Monday</td>
+                        <td>9:30 AM</td>
+                        <td>Social Club</td>
+                    </tr>
+                    <tr class="yoga">
+                        <td>Yoga</td>
+                        <td>Tuesday</td>
+                        <td>7:00 PM</td>
+                        <td>Village Hall</td>
+                        
+                    </tr>
+                    <tr class="chairYoga">
+                        <td>Chair Yoga</td>
+                        <td>Thursday</td>
+                        <td>9:30 AM</td>
+                        <td>Social Club</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <div class="container" id="mapInfo">
+        <h2>Venue Information</h2>
+        <p>
+            The classes take place in two different venues in Burton Village although the share the same car park. 
+            Gladstone Village Hall is shown on the map below and can be seen from the road. 
+            Sports and Social Club is the building behind the Village Hall, next to the bowling green.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.5578991485127!2d-3.0248867445598333!3d53.26162284560361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd66a1d741140e0d4!2sGladstone+Village+Hall!5e0!3m2!1sen!2suk!4v1508935749449" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container">
+        <div class="row footer">
+            <p>This website was designed by Amy Collin 2017</p>
+        </div>
+    </footer>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    crossorigin="anonymous"></script>
+    <script src='js/index.js'></script>
+</body>
+</html>
