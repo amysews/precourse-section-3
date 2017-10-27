@@ -82,7 +82,50 @@ a:hover {
     font-weight: 300;
 }
 
-.classes {
+.quiz {
+    height: 400px;
+    margin-top: 30px;
+}
+
+.start, .questionNum {
+    padding-top: 70px;
+}
+
+.quizPart {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.questionMonitor {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.choices {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.quiz ul {
+    list-style-type: none;
+}
+
+.quiz li {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(87, 87, 87);
+}
+
+.pose {
+    width: 100%;
+}
+
+.panel {
     text-align: center;
 }
 

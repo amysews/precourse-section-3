@@ -81,19 +81,43 @@
                 </a>
             </div>
         </div>
-        <h2>How well do you know your yoga?</h2> <!-- Change this to a quiz game, showing the user a yoga pose and they have to select from a list which one they think it is -->
+    </div>
+
+    <div class="container">
         <div class="row">
-            <!-- Make this the name and any other text -->
-            <div class="col-sm-8">
-                <button type="button" id="randPoseGen">New Pose</button>
-                <h3 id="targetNameEng"></h3>
-                <h3 id="targetNameSan"></h3>
-            </div>
-            <!-- Make this the image -->
-            <div class="col-sm-4">
-                <img src="">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel quiz panel-default">
+                    <h2>How well do you know your yoga poses?</h2> <!-- Change this to a quiz game, showing the user a yoga pose and they have to select from a list which one they think it is -->
+                    <div class="row container quizPart start">
+                        <p>See if you can recognise the next 5 poses</p>
+                        <br>
+                        <button type="button" class="btn btn-default bt-lg" id="startButton">START</button>
+                    </div>
+                    <div class="row container quizPart questionNum hide">
+                        <h2 id="qNum">Question 1</h2>
+                    </div>
+                    <div class="row container quizPart questionOne hide">
+                        <p class="questionMonitor">Question 1 of 5</p>
+                        <div class="col-xs-4">
+                            <img src="headshot 2.jpg" class="pose">
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="choices">Is it...</p>
+                            <ul>
+                                <li>downward dog</li>
+                                <li>upward dog</li>
+                                <li>cobra</li>
+                            </ul>
+                            <br>
+                            <p class="correctAnswer hide">Well done, that's the right answer</p>
+                            <button type="button" class="btn btn-default correctAnswer nextQ hide">Next Question</button>
+                            <p class="wrongAnswer hide">Wrong answer, try again</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 
     <!-- Footer -->

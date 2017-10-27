@@ -12,22 +12,101 @@ $("#chair").click (function () {
   $('.yoga').toggleClass("filterToggle", true);
 })
 
-$("#randPoseGen").click (function () {
-  $('#targetNameEng') = "Downward Dog";
-  
-  // Generate random number between 1 and X (depending on how many poses I want to include)
-  //let randInt = ;
+var timeoutID;
 
-  // Switch between 1 and X
-  //switch randInt:
-  //case 1:
-  //src="pose1.jpg";
-  //name="Pose 1";
-  //break;
-  //etc.
+$("#startButton").click (function () {
+  $('.start').toggleClass('hide');
+  $('.questionNum').toggleClass('hide');
+  timeoutID = window.setTimeout(function() {
+    $('.questionNum').toggleClass('hide');
+    $('.questionOne').toggleClass('hide');
+  }, 800);
+})
 
-  // Update or create for first time image according to src
+var questionOneAnswer = "upward dog";
 
-  // Update or create pose name next to image - english and sanscript 
+var answer1 = document.getElementsByTagName("li")[3];
+var answer2 = document.getElementsByTagName("li")[4];
+var answer3 = document.getElementsByTagName("li")[5];
 
+var resp = document.getElementsByClassName("response");
+
+$(answer1).click(function() {
+  if (this.textContent == questionOneAnswer) {
+    console.log("Correct");
+    answer1.classList.add('correct');
+    answer1.style.color = "green";
+    $('.correctAnswer').toggleClass('hide', false);
+    $('.wrongAnswer').toggleClass('hide', true);
+  } else {
+    console.log("wrong");
+    answer1.classList.add('wrong');
+    answer1.style.color = "red";
+    $('.wrongAnswer').toggleClass('hide', false);
+  }
+})
+
+$(answer2).click(function() {
+  if (this.textContent == questionOneAnswer) {
+    console.log("Correct");
+    answer2.classList.add('correct');
+    answer2.style.color = "green";
+    $('.correctAnswer').toggleClass('hide', false);
+    $('.wrongAnswer').toggleClass('hide', true);
+  } else {
+    console.log("wrong");
+    answer2.classList.add('wrong');
+    answer2.style.color = "red";
+    $('.wrongAnswer').toggleClass('hide', false);
+  }
+})
+
+$(answer3).click(function() {
+  if (this.textContent == questionOneAnswer) {
+    console.log("Correct");
+    answer3.classList.add('correct');
+    answer3.style.color = "green";
+    $('.correctAnswer').toggleClass('hide', false);
+    $('.wrongAnswer').toggleClass('hide', true);
+  } else {
+    console.log("wrong");
+    answer3.classList.add('wrong');
+    answer3.style.color = "red";
+    $('.wrongAnswer').toggleClass('hide', false);
+  }
+})
+
+$(".nextQ").click (function () {
+  $('#qNum').textContent = "Question 2";
+  $('.questionOne').toggleClass('hide');
+  $('.questionNum').toggleClass('hide');
+  // timeoutID = window.setTimeout(function() {
+   // $('.questionNum').toggleClass('hide');
+   // $('.questionOne').toggleClass('hide');
+ // }, 800);
+})
+
+
+/*
+var answer1 = document.getElementsByClassName("answerOne");
+var answer2 = document.getElementsByTagName("li")[4];
+var answer3 = document.getElementsByTagName("li")[5];
+
+answer1.addEventListener("click", checkAnswer(answer1.textContent, questionOneAnswer));
+answer2.addEventListener("click", checkAnswer(answer2, questionOneAnswer));
+answer3.addEventListener("click", checkAnswer(answer3, questionOneAnswer));
+
+function checkAnswer(userAnswer, correctAnswer) {
+  if (userAnswer === correctAnswer) {
+    console.log("Correct");
+  } else {
+    console.log("wrong");
+  }
+}
+*/
+
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+  console.log("someone clicked the button!");
 })
